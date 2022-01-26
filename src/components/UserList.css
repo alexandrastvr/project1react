@@ -1,0 +1,19 @@
+.user-list{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 65px;
+    margin-bottom: 35px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}

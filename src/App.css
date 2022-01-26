@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html{
+  background-color: #E0D3DE;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p{
+  font-size: 18px;
 }
-
-.App-header {
-  background-color: #282c34;
+.App{
   min-height: 100vh;
+}
+
+header{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 3px solid #E0D3DE;
+}
+
+header h1{
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  font-size: 70px;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.content{
+  margin: auto;
+  margin-top: 210px;
+  width: 50%;
+}
+
+aside{
+  float: right;
+  position: fixed;
+  bottom: 20px;
+  right:20px;
+}
+
+.buttons{
+  padding: 5px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
+  align-items:center;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="color"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  margin: 0px 5px;
+  background-color: transparent;
+  border: none;
+  border-color: 1px solid #443742;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+  background-color: transparent;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+  border: 1px solid #443742;
+  background-color: transparent;
+  border-radius: 100px;
+  box-shadow: rgba(68, 55, 66, 0.25) 0px 54px 55px, rgba(68, 55, 66, 0.12) 0px -12px 30px, rgba(68, 55, 66, 0.12) 0px 4px 6px, rgba(68, 55, 66, 0.17) 0px 12px 13px, rgba(68, 55, 66, 0.09) 0px -3px 5px;
+} 
+.right-btn, .left-btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+#bkgColor{
+  margin-right: 20px;
+}
+
+.buttons button{
+  margin: 10px 15px;
+  padding: 5px 15px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border:none;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid #443742;
+  box-shadow: rgba(68, 55, 66, 0.25) 0px 54px 55px, rgba(68, 55, 66, 0.12) 0px -12px 30px, rgba(68, 55, 66, 0.12) 0px 4px 6px, rgba(68, 55, 66, 0.17) 0px 12px 13px, rgba(68, 55, 66, 0.09) 0px -3px 5px;
+}
+
+#post{
+  background-color: #443742;
+  color: #B5BA72;
 }
