@@ -8,6 +8,7 @@ Proiectul se poate accesa prin linkul:
 
  * Home - pagina cu functionalitatile mentionate mai jos 
  * About - pagina ce contine descrierea aplicatiei si cateva detaliidespre je
+ * Page 404 - in cazul introducerii unei adrese care nu exista 
 
 
 ## Functionalitati
