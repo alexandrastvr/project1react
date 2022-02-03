@@ -2,6 +2,7 @@ import React from 'react';
 import UserList from '../components/UserList';
 import PostList from '../components/PostList';
 import UserAddForm from '../components/UserAddForm';
+import {Link} from 'react-router-dom';
 
 class Home extends React.Component{
     constructor(){
@@ -82,38 +83,44 @@ class Home extends React.Component{
   
     render(){
       return(
-        <div className='App' style={{background:this.state.background, color:this.state.textColor}}>
-          <header style={{background:this.state.background}}>
-              <div className='buttons'>
-                <div className='left-btn'>
-                  <button onClick={this.displayUsersFcn}>Utilizatori</button>
-                  <button onClick={this.displayPostsFcn} id='post'>Postari</button>
+        <div className='Application' style={{background:this.state.background, color:this.state.textColor}}>
+          <div className='App'>
+
+            <header style={{background:this.state.background}}>
+                <div className='buttons'>
+                  <div className='left-btn'>
+                    <button onClick={this.displayUsersFcn}>Utilizatori</button>
+                    <button onClick={this.displayPostsFcn} id='post'>Postari</button>
+                  </div>
+                  <h1>PROIECT 1 React</h1>
+                  <div className='right-btn'>
+                    <label htmlFor="bkgColor">Background Color</label>
+                    <input type="color" id="bkgColor"  value='#B5BA72'
+                      onChange={(event) => this.handleBackgroundChange(event)}/>
+            
+                    <label htmlFor="txtColor">Text Color</label>
+                    <input type="color" id="txtColor"  value='#443742'
+                      onChange={(event) => this.handleTextColorChange(event)}/>
+                  </div>
                 </div>
-                <h1>PROIECT 1 React</h1>
-                <div className='right-btn'>
-                  <label htmlFor="bkgColor">Background Color</label>
-                  <input type="color" id="bkgColor"  value='#B5BA72'
-                    onChange={(event) => this.handleBackgroundChange(event)}/>
-          
-                  <label htmlFor="txtColor">Text Color</label>
-                  <input type="color" id="txtColor"  value='#443742'
-                    onChange={(event) => this.handleTextColorChange(event)}/>
-                </div>
-              </div>
-          </header>
-  
-          <div className='content'>
-            <UserAddForm updateUsersList = {(user) => {this.updateUsersList(user)}}
-                         background = {this.state.background}
-                         color = {this.state.textColor}
-            />
-          {
-            (this.state.displayUsers)
-              ? <UserList users={this.state.users}
-                          deleteUser = {(user) => {this.deleteUser(user)}}
-                />
-              : <PostList posts={this.state.posts} />
-          }
+            </header>
+    
+            <div className='content'>
+              <UserAddForm updateUsersList = {(user) => {this.updateUsersList(user)}}
+                          background = {this.state.background}
+                          color = {this.state.textColor}
+              />
+            {
+              (this.state.displayUsers)
+                ? <UserList users={this.state.users}
+                            deleteUser = {(user) => {this.deleteUser(user)}}
+                  />
+                : <PostList posts={this.state.posts} />
+            }
+            </div>
+            <div className='footer' style={{background:this.state.background}}>
+              <Link to='/about'>Despre</Link>
+            </div>
           </div>
         </div>
   

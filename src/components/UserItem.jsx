@@ -16,7 +16,7 @@ class UserItem extends React.Component{
                <div className='user-item'>
                    <h2>{ this.props.name }</h2>
                    <div className='div-img'>
-                        <img src = {this.props.image} width="200px"/>
+                        <img src = {this.props.image} width="150px"/>
                    </div>
                    <p>{ this.props.email }</p>
                    <p>Salariu: {(this.props.id != null) ? ((2800+this.props.id*1400) + 'RON') : (this.props.salary + 'RON')} </p>

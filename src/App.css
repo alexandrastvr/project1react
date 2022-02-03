@@ -5,6 +5,8 @@
   font-weight: 300;
 }
 body, html{
+  margin: 0;
+  padding: 0;
   background-color: #E0D3DE;
 }
 p{
@@ -25,25 +27,25 @@ header{
 
 header h1{
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   text-align: center;
   font-family: 'Rock Salt', cursive;
-  font-size: 70px;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: 800;
   overflow: hidden;
 }
 
 .content{
   margin: auto;
-  margin-top: 210px;
-  width: 50%;
+  margin-top: 135px;
+  width: 60%;
 }
 
 aside{
   float: right;
   position: fixed;
-  bottom: 20px;
+  bottom: 180px;
   right:20px;
 }
 
@@ -108,4 +110,23 @@ input[type="color"]::-webkit-color-swatch {
 #post{
   background-color: #443742;
   color: #B5BA72;
+}
+
+.footer{
+  border: 1px solid black;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  border-top: 3px solid #E0D3DE;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.footer a{
+  font-family: 'Rock Salt', cursive;
+  font-size: 23px;
+  text-decoration: none;
+  margin:auto;
+  color: #645261;;
 }
