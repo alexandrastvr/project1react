@@ -63,7 +63,11 @@
 .info img {
     grid-column: 1/2;
     grid-row: 1/-1;
-    margin: 0px 0px 0px 35px;
+    margin: 0px 0px 0px 20px;
+    transition: 0.3s ease-in-out;
+}
+.info img:hover{
+    transform: scale(1.3);
 }
 .info h2{
     margin-top: 0px;
@@ -78,4 +82,8 @@
 .info p{
     font-size: 15px;  
     color: #866f82;
+}
+
+@keyframes blingbling {
+    
 }
