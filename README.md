@@ -2,7 +2,7 @@
 
 Proiectul se poate accesa prin linkul:
 
- https://alexandrastvr.github.io/proiect1/
+ https://project-react-1-telacad.herokuapp.com/
 
  ## Pagini
 
