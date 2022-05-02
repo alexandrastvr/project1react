@@ -32,10 +32,12 @@ function About() {
             ...m'appelle Paduche Chel! 
           </p>
           <p id='p2'>
-              Sunt Alexandra si ma aflu in a 27-a iarna a vietii. Sunt inscrisa 
-              la cursul Web Developer ONLINE si pana acum este foarte distractiv!
-              Sunt, in prezent, inginer in domeniul aerospatial, insa sper la un 
-              viitor mai bun, in care sa scriu cod. Sunt satula de cuvantul 'sunt'.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+          culpa qui officia deserunt mollit anim id est laborum.
           </p>
           
         </div>
